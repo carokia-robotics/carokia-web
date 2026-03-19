@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { roadmapPhases } from '$lib/data/roadmap';
 	import { repos } from '$lib/data/repos';
 
@@ -82,7 +83,7 @@
 <!-- HEADER -->
 <header class="header" class:scrolled>
 	<nav class="nav">
-		<a href="/" class="logo">CAROKIA</a>
+		<a href="{base}/" class="logo">CAROKIA</a>
 		<div class="nav-links">
 			{#each navLinks as link}
 				<a href={link.href}>{link.label}</a>
